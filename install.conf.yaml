@@ -15,6 +15,9 @@
     ~/.zprofile: configs/mozsh/zprofile
     ~/.oh-my-zsh: configs/mozsh/oh_my_zsh
 
+    # alacritty
+    ~/.config/alacritty: configs/alacritty
+
     # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
@@ -28,5 +31,7 @@
     ~/.cache: cache
 
 - create:
+    - ~/.ssh
+    - ~/.config
     - ~/.dotfiles/cache
 
