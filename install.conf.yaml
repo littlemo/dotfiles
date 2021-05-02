@@ -11,5 +11,8 @@
         if: '[ -f ~/.dotfiles/secret/ssh/config ]'
         path: secret/ssh/config
         create: true
+    ~/.cache: cache
 
+- create:
+    - ~/.dotfiles/cache
 
