@@ -1,9 +1,14 @@
 - clean: ['~']
 
 - link:
+    # bash
     ~/.bash_profile: configs/bash/bash_profile
     ~/.bashrc: configs/bash/bashrc
+
+    # git
     ~/.gitconfig: configs/git/gitconfig
+
+    # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
         path: secret/token
@@ -11,6 +16,8 @@
         if: '[ -f ~/.dotfiles/secret/ssh/config ]'
         path: secret/ssh/config
         create: true
+
+    # misc
     ~/.cache: cache
 
 - create:
