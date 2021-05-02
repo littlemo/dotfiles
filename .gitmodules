@@ -2,3 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "configs/mozsh"]
+	path = configs/mozsh
+	url = https://github.com/littlemo/mozsh.git
