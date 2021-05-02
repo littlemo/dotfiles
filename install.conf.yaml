@@ -4,8 +4,12 @@
     ~/.bash_profile: configs/bash/bash_profile
     ~/.bashrc: configs/bash/bashrc
     ~/.gitconfig: configs/git/gitconfig
+    ~/.token:
+        if: '[ -f ~/.dotfiles/secret/token ]'
+        path: secret/token
     ~/.ssh/config:
-        path: configs/ssh/config
+        if: '[ -f ~/.dotfiles/secret/ssh/config ]'
+        path: secret/ssh/config
         create: true
 
 
