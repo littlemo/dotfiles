@@ -8,6 +8,13 @@
     # git
     ~/.gitconfig: configs/git/gitconfig
 
+    # zsh
+    ~/.zplug: configs/mozsh/zplug
+    ~/.zshrc: configs/mozsh/zshrc
+    ~/.zshenv: configs/mozsh/zshenv
+    ~/.zprofile: configs/mozsh/zprofile
+    ~/.oh-my-zsh: configs/mozsh/oh_my_zsh
+
     # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
