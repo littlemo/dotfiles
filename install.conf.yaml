@@ -1,9 +1,9 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.gitconfig: gitconfig
+    ~/.bash_profile: bash/bash_profile
+    ~/.bashrc: bash/bashrc
+    ~/.gitconfig: git/gitconfig
     ~/.ssh/config:
         path: ssh/config
         create: true
