@@ -24,6 +24,11 @@
     ~/.tmux.conf: configs/motmux/oh-my-tmux-conf/.tmux.conf
     ~/.tmux.conf.local: configs/motmux/motmux_conf/tmux.entry.conf
 
+    # vim
+    ~/.config/nvim:
+        path: configs/vim-config
+        create: true
+
     # alacritty
     ~/.config/alacritty: configs/alacritty
 

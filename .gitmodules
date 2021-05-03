@@ -8,3 +8,6 @@
 [submodule "configs/motmux"]
 	path = configs/motmux
 	url = https://github.com/littlemo/motmux.git
+[submodule "configs/vim-config"]
+	path = configs/vim-config
+	url = https://github.com/littlemo/vim-config.git
