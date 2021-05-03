@@ -11,3 +11,4 @@
 [submodule "configs/vim-config"]
 	path = configs/vim-config
 	url = https://github.com/littlemo/vim-config.git
+	branch = dev_movim
