@@ -32,6 +32,9 @@
     # alacritty
     ~/.config/alacritty: configs/alacritty
 
+    # ranger
+    ~/.config/ranger: configs/ranger
+
     # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
