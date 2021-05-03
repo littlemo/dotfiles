@@ -19,6 +19,11 @@
     ~/.zprofile: configs/mozsh/zprofile
     ~/.oh-my-zsh: configs/mozsh/oh_my_zsh
 
+    # tmux
+    ~/.tmux: configs/motmux/motmux_conf
+    ~/.tmux.conf: configs/motmux/oh-my-tmux-conf/.tmux.conf
+    ~/.tmux.conf.local: configs/motmux/motmux_conf/tmux.entry.conf
+
     # alacritty
     ~/.config/alacritty: configs/alacritty
 
