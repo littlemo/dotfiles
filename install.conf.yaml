@@ -40,6 +40,9 @@
     # ranger
     ~/.config/ranger: configs/ranger
 
+    # python
+    ~/.pylintrc: configs/python/pylint/pylintrc
+
     # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
