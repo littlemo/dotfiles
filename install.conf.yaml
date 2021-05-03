@@ -4,6 +4,11 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.ssh
+    - ~/.config
+    - ~/.dotfiles/cache
+
 - link:
     # bash
     ~/.bash_profile: configs/bash/bash_profile
@@ -46,9 +51,4 @@
 
     # misc
     ~/.cache: cache
-
-- create:
-    - ~/.ssh
-    - ~/.config
-    - ~/.dotfiles/cache
 
