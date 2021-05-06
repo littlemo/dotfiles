@@ -17,6 +17,10 @@
     # git
     ~/.gitconfig: configs/git/gitconfig
 
+    # fzf
+    ~/.fzf.bash: configs/fzf/.fzf.bash
+    ~/.fzf.zsh: configs/fzf/.fzf.zsh
+
     # zsh
     ~/.zshrc: configs/mozsh/zshrc
     ~/.zshenv: configs/mozsh/zshenv
