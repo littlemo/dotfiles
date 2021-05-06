@@ -18,11 +18,11 @@
     ~/.gitconfig: configs/git/gitconfig
 
     # zsh
-    ~/.zplug: configs/mozsh/zplug
     ~/.zshrc: configs/mozsh/zshrc
     ~/.zshenv: configs/mozsh/zshenv
     ~/.zprofile: configs/mozsh/zprofile
     ~/.oh-my-zsh: configs/mozsh/oh_my_zsh
+    ~/.p10k.zsh: configs/mozsh/p10k.zsh
 
     # tmux
     ~/.tmux: configs/motmux/motmux_conf
