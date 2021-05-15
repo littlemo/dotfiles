@@ -792,6 +792,7 @@ key_bindings:
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward    }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward   }
   - { key: Q,              mods: Control,            chars: "\x11" }
+  - { key: Back,                                              action:  ReceiveChar}
 
 #debug:
   # Display the time it takes to redraw each frame.
