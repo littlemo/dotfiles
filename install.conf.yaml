@@ -41,6 +41,9 @@
     # alacritty
     ~/.config/alacritty: configs/alacritty
 
+    # kitty
+    ~/.config/kitty: configs/kitty
+
     # ranger
     ~/.config/ranger: configs/ranger
 
