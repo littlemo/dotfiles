@@ -49,6 +49,7 @@
 
     # python
     ~/.pylintrc: configs/python/pylint/pylintrc
+    ~/.flake8: configs/python/flake8.ini
 
     # secret
     ~/.token:
