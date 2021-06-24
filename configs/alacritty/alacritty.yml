@@ -404,6 +404,7 @@ background_opacity: 0.93
 shell:
  program: /usr/local/bin/zsh
  args:
+   # - --login
    - -l
    - -c
    - "tmux a -t moore || tmux new -s moore"
