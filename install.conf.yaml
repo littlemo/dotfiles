@@ -48,7 +48,8 @@
     ~/.config/ranger: configs/ranger
 
     # python
-    ~/.pylintrc: configs/python/pylint/pylintrc
+    ~/.pylintrc: configs/python/pylintrc.ini
+    ~/.config/pycodestyle: configs/python/pycodestyle.ini
     ~/.flake8: configs/python/flake8.ini
 
     # secret
@@ -62,5 +63,4 @@
 
     # misc
     ~/.cache: cache
-    ~/.config/pycodestyle: configs/pycodestyle/pycodestyle
 
