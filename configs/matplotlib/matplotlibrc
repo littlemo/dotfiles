@@ -1,0 +1,5 @@
+backend: TkAgg
+
+font.family: sans-serif
+font.sans-serif: SimHei, Microsoft YaHei
+axes.unicode_minus: False

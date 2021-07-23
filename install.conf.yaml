@@ -51,6 +51,7 @@
     ~/.pylintrc: configs/python/pylintrc.ini
     ~/.config/pycodestyle: configs/python/pycodestyle.ini
     ~/.flake8: configs/python/flake8.ini
+    ~/.matplotlib/matplotlibrc: configs/matplotlib/matplotlibrc
 
     # secret
     ~/.token:
