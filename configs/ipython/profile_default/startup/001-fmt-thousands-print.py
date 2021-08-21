@@ -25,14 +25,6 @@ except ImportError:
 try:
     import pandas as pd
 
-    class IntFormatter(pd.core.format.GenericArrayFormatter):
-        pd.set_option('display.float_format', lambda x: "{:,}".format(x))
-
-        def _format_strings(self):
-            formatter = self.formatter or (lambda x: ' {:,}'.format(x))
-            fmt_values = [formatter(x) for x in self.values]
-            return fmt_values
-
-    pd.core.format.IntArrayFormatter = IntFormatter
+    pd.set_option('display.float_format', lambda x: "{:,}".format(x))
 except ImportError:
     pass
