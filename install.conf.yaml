@@ -53,6 +53,9 @@
     ~/.flake8: configs/python/flake8.ini
     ~/.matplotlib/matplotlibrc: configs/matplotlib/matplotlibrc
 
+    # ipython
+    ~/.ipython: configs/ipython
+
     # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
