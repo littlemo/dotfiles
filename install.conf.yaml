@@ -56,6 +56,9 @@
     # ipython
     ~/.ipython: configs/ipython
 
+    # percol
+    ~/.percol.d: configs/percol
+
     # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
