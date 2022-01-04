@@ -34,9 +34,17 @@
     ~/.tmux.conf.local: configs/motmux/motmux_conf/tmux.entry.conf
 
     # vim
+#   ~/.config/nvim:
+#       path: configs/vim-config
+#       create: true
+
+    # neovim
     ~/.config/nvim:
-        path: configs/vim-config
-        create: true
+      path: configs/NvChad
+      create: true
+    ~/.config/nvim/lua/custom:
+      path: configs/monvim
+      create: true
 
     # alacritty
     ~/.config/alacritty: configs/alacritty
