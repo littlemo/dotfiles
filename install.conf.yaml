@@ -67,9 +67,6 @@
     # percol
     ~/.percol.d: configs/percol
 
-    # neovide
-    ~/.bin/neovide: bin/neovide/neovide
-
     # secret
     ~/.token:
         if: '[ -f ~/.dotfiles/secret/token ]'
