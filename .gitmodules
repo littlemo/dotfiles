@@ -5,15 +5,19 @@
 [submodule "configs/mozsh"]
 	path = configs/mozsh
 	url = https://github.com/littlemo/mozsh.git
+	branch = master
 [submodule "configs/motmux"]
 	path = configs/motmux
 	url = https://github.com/littlemo/motmux.git
+	branch = master
 [submodule "configs/NvChad"]
 	path = configs/NvChad
 	url = https://github.com/NvChad/NvChad.git
+	branch = master
 [submodule "configs/monvim"]
 	path = configs/monvim
 	url = https://github.com/littlemo/monvim.git
+	branch = master
 [submodule "configs/vim-config"]
 	path = configs/vim-config
 	url = https://github.com/littlemo/vim-config.git
