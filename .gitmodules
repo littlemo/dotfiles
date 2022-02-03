@@ -22,3 +22,7 @@
 	path = configs/vim-config
 	url = https://github.com/littlemo/vim-config.git
 	branch = dev_movim
+[submodule "configs/ranger/plugins/devicons2"]
+	path = configs/ranger/plugins/devicons2
+	url = https://github.com/cdump/ranger-devicons2
+	branch = master
