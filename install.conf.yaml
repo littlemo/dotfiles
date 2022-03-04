@@ -64,6 +64,9 @@
     # ipython
     ~/.ipython: configs/ipython
 
+    # tldrjs
+    ~/.tldrrc: configs/tldrjs/tldrrc.json
+
     # percol
     ~/.percol.d: configs/percol
 
