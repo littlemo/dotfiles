@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+# - clean: ['~']
 
 - create:
     - ~/.ssh
@@ -78,6 +78,9 @@
         if: '[ -f ~/.dotfiles/secret/ssh/config ]'
         path: secret/ssh/config
         create: true
+
+    # karabiner
+    ~/.config/karabiner: configs/karabiner
 
     # misc
     ~/.cache: cache
