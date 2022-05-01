@@ -16,12 +16,12 @@
                 },
                 "rules": [
                     {
-                        "description": "RightCommand + number: F1 ~ F12",
+                        "description": "Tab + number: F1 ~ F12",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -44,7 +44,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -67,7 +67,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -90,7 +90,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -113,7 +113,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -136,7 +136,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -159,7 +159,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -182,7 +182,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -205,7 +205,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -228,7 +228,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -251,7 +251,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -274,7 +274,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -297,12 +297,12 @@
                         ]
                     },
                     {
-                        "description": "RightCommand + hjkl to arrow keys",
+                        "description": "Tab + hjkl to arrow keys",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -325,7 +325,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -348,7 +348,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -371,7 +371,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "right_command pressed",
+                                        "name": "tab pressed",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -393,7 +393,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "right_command",
+                                    "key_code": "tab",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -407,7 +407,7 @@
                                 "to": [
                                     {
                                         "set_variable": {
-                                            "name": "right_command pressed",
+                                            "name": "tab pressed",
                                             "value": 1
                                         }
                                     }
@@ -415,14 +415,14 @@
                                 "to_after_key_up": [
                                     {
                                         "set_variable": {
-                                            "name": "right_command pressed",
+                                            "name": "tab pressed",
                                             "value": 0
                                         }
                                     }
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "right_command"
+                                        "key_code": "tab"
                                     }
                                 ],
                                 "type": "basic"
@@ -430,11 +430,11 @@
                         ]
                     },
                     {
-                        "description": "RightOption : (HYPER) SHIFT+COMMAND+OPTION+CONTROL",
+                        "description": "RightCommand : (HYPER) SHIFT+COMMAND+OPTION+CONTROL",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "right_option",
+                                    "key_code": "right_command",
                                     "modifiers": {
                                         "optional": [
                                             "any"

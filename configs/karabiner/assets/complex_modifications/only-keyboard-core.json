@@ -1,13 +1,13 @@
 {
-  "title": "Tab : use only keyboard core area",
+  "title": "RightCommand : use only keyboard core area",
   "rules": [
     {
-      "description": "Tab + number: F1 ~ F12",
+      "description": "RightCommand + number: F1 ~ F12",
       "manipulators": [
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -30,7 +30,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -53,7 +53,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -76,7 +76,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -99,7 +99,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -122,7 +122,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -145,7 +145,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -168,7 +168,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -191,7 +191,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -214,7 +214,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -237,7 +237,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -260,7 +260,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -283,12 +283,12 @@
       ]
     },
     {
-      "description": "Tab + backspace to delete",
+      "description": "RightCommand + backspace to delete",
       "manipulators": [
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -310,7 +310,7 @@
         },
         {
           "from": {
-            "key_code": "tab",
+            "key_code": "right_command",
             "modifiers": {
               "optional": [
                 "any"
@@ -324,7 +324,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "tab pressed",
+                "name": "right_command pressed",
                 "value": 1
               }
             }
@@ -332,14 +332,14 @@
           "to_after_key_up": [
             {
               "set_variable": {
-                "name": "tab pressed",
+                "name": "right_command pressed",
                 "value": 0
               }
             }
           ],
           "to_if_alone": [
             {
-              "key_code": "tab"
+              "key_code": "right_command"
             }
           ],
           "type": "basic"
@@ -347,12 +347,12 @@
       ]
     },
     {
-      "description": "Tab + hjkl to arrow keys",
+      "description": "RightCommand + hjkl to arrow keys",
       "manipulators": [
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -375,7 +375,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -398,7 +398,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -421,7 +421,7 @@
         {
           "conditions": [
             {
-              "name": "tab pressed",
+              "name": "right_command pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -443,7 +443,7 @@
         },
         {
           "from": {
-            "key_code": "tab",
+            "key_code": "right_command",
             "modifiers": {
               "optional": [
                 "any"
@@ -457,7 +457,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "tab pressed",
+                "name": "right_command pressed",
                 "value": 1
               }
             }
@@ -465,14 +465,14 @@
           "to_after_key_up": [
             {
               "set_variable": {
-                "name": "tab pressed",
+                "name": "right_command pressed",
                 "value": 0
               }
             }
           ],
           "to_if_alone": [
             {
-              "key_code": "tab"
+              "key_code": "right_command"
             }
           ],
           "type": "basic"
