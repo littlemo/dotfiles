@@ -82,6 +82,9 @@
     # karabiner
     ~/.config/karabiner: configs/karabiner
 
+    # hammerspoon
+    ~/.hammerspoon: configs/hammerspoon
+
     # misc
     ~/.cache: cache
 
