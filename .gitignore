@@ -4,3 +4,4 @@ cache
 *.sqlite
 
 configs/ipython/profile_default/db
+configs/karabiner/automatic_backups
