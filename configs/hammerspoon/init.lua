@@ -8,7 +8,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
   },
   hotkeys = {
     o = "Google Chrome",
-    t = "Alacritty",
+    k = "Alacritty",
     l = "Logseq",
     m = "Microsoft Outlook",
     w = "企业微信",
