@@ -7,9 +7,10 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     modifiers = hyperKey,
   },
   hotkeys = {
-    o = "Google Chrome",
+    j = "Google Chrome",
     k = "Alacritty",
     l = "Logseq",
+    [";"] = "/System/Library/CoreServices/Finder.app",
     m = "Microsoft Outlook",
     w = "企业微信",
     c = "WeChat",
