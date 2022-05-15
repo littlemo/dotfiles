@@ -1,8 +1,8 @@
 {
-    "title": "RightCommand : (HYPER) SHIFT+COMMAND+OPTION+CONTROL",
+    "title": "Hyper键定义",
     "rules": [
         {
-            "description": "RightCommand : (HYPER) SHIFT+COMMAND+OPTION+CONTROL",
+            "description": "right_command : (HYPER) SHIFT+COMMAND+OPTION+CONTROL",
             "manipulators": [
                 {
                     "from": {
