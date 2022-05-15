@@ -7,6 +7,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     modifiers = hyperKey,
   },
   hotkeys = {
+    u = "Chromium",
     j = "Google Chrome",
     k = "Alacritty",
     l = "Logseq",
