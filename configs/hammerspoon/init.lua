@@ -16,6 +16,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     w = "企业微信",
     c = "WeChat",
     d = "TickTick",
+    t = "TencentMeeting",
   },
 })
 
