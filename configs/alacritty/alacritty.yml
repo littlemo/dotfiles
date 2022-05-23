@@ -67,7 +67,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.93
+  opacity: 1
 
   # Startup Mode (changes require restart)
   #
@@ -433,12 +433,12 @@ font:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-shell:
-  program: /usr/local/bin/zsh
-  args:
-   - -l
-   - -c
-   - "tmux a -t moore || tmux new -s moore"
+# shell:
+#   program: /usr/local/bin/zsh
+#   args:
+#    - -l
+#    - -c
+#    - "tmux a -t moore || tmux new -s moore"
 
 # Startup directory
 #
