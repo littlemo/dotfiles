@@ -14,6 +14,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     [";"] = "/System/Library/CoreServices/Finder.app",
     m = "Microsoft Outlook",
     w = "企业微信",
+    o = "腾讯文档",
     c = "WeChat",
     d = "TickTick",
     t = "TencentMeeting",
