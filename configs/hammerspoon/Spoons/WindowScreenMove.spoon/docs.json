@@ -1,0 +1,122 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "WindowScreenMove:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for WindowScreenMove",
+        "doc": "Binds hotkeys for WindowScreenMove\n\nParameters:\n * mapping - A table containing hotkey objifier/key details for the following items:\n  * screen_left, screen_right, screen_up, screen_down - move the window to the left/right/up/down screen (if you have more than one monitor connected, does nothing otherwise)",
+        "examples": [],
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "97",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing hotkey objifier/key details for the following items:\n   * screen_left, screen_right, screen_up, screen_down - move the window to the left/right/up/down screen (if you have more than one monitor connected, does nothing otherwise)"
+        ],
+        "returns": [],
+        "signature": "WindowScreenMove:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [
+      {
+        "def": "WindowScreenMove.animationDuration",
+        "desc": "Length of the animation to use for the window movements across the",
+        "doc": "Length of the animation to use for the window movements across the\nscreens. `nil` means to use the existing value from\n`hs.window.animationDuration`. 0 means to disable the\nanimations. Default: `nil`.",
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "44",
+        "name": "animationDuration",
+        "signature": "WindowScreenMove.animationDuration",
+        "stripped_doc": "screens. `nil` means to use the existing value from\n`hs.window.animationDuration`. 0 means to disable the\nanimations. Default: `nil`.",
+        "type": "Variable"
+      },
+      {
+        "def": "WindowScreenMove.defaultHotkeys",
+        "desc": "Table containing a sample set of hotkeys that can be",
+        "doc": "Table containing a sample set of hotkeys that can be\nassigned to the different operations. These are not bound\nby default - if you want to use them you have to call:\n`spoon.WindowScreenMove:bindHotkeys(spoon.WindowScreenMove.defaultHotkeys)`\nafter loading the spoon. Value:\n```\n {\n    screen_left = { {\"ctrl\", \"alt\", \"cmd\"}, \"Left\" },\n    screen_right= { {\"ctrl\", \"alt\", \"cmd\"}, \"Right\" },\n    screen_up   = { {\"ctrl\", \"alt\", \"cmd\"}, \"Up\" },\n    screen_down = { {\"ctrl\", \"alt\", \"cmd\"}, \"Down\" },\n }\n```",
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "22",
+        "name": "defaultHotkeys",
+        "signature": "WindowScreenMove.defaultHotkeys",
+        "stripped_doc": "assigned to the different operations. These are not bound\nby default - if you want to use them you have to call:\n`spoon.WindowScreenMove:bindHotkeys(spoon.WindowScreenMove.defaultHotkeys)`\nafter loading the spoon. Value:\n```\n {\n    screen_left = { {\"ctrl\", \"alt\", \"cmd\"}, \"Left\" },\n    screen_right= { {\"ctrl\", \"alt\", \"cmd\"}, \"Right\" },\n    screen_up   = { {\"ctrl\", \"alt\", \"cmd\"}, \"Up\" },\n    screen_down = { {\"ctrl\", \"alt\", \"cmd\"}, \"Down\" },\n }\n```",
+        "type": "Variable"
+      },
+      {
+        "def": "WindowScreenMove.logger",
+        "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "doc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "17",
+        "name": "logger",
+        "signature": "WindowScreenMove.logger",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Move windows to other screens",
+    "doc": "Move windows to other screens\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenMove.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenMove.spoon.zip)",
+    "items": [
+      {
+        "def": "WindowScreenMove.animationDuration",
+        "desc": "Length of the animation to use for the window movements across the",
+        "doc": "Length of the animation to use for the window movements across the\nscreens. `nil` means to use the existing value from\n`hs.window.animationDuration`. 0 means to disable the\nanimations. Default: `nil`.",
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "44",
+        "name": "animationDuration",
+        "signature": "WindowScreenMove.animationDuration",
+        "stripped_doc": "screens. `nil` means to use the existing value from\n`hs.window.animationDuration`. 0 means to disable the\nanimations. Default: `nil`.",
+        "type": "Variable"
+      },
+      {
+        "def": "WindowScreenMove:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for WindowScreenMove",
+        "doc": "Binds hotkeys for WindowScreenMove\n\nParameters:\n * mapping - A table containing hotkey objifier/key details for the following items:\n  * screen_left, screen_right, screen_up, screen_down - move the window to the left/right/up/down screen (if you have more than one monitor connected, does nothing otherwise)",
+        "examples": [],
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "97",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing hotkey objifier/key details for the following items:\n   * screen_left, screen_right, screen_up, screen_down - move the window to the left/right/up/down screen (if you have more than one monitor connected, does nothing otherwise)"
+        ],
+        "returns": [],
+        "signature": "WindowScreenMove:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "WindowScreenMove.defaultHotkeys",
+        "desc": "Table containing a sample set of hotkeys that can be",
+        "doc": "Table containing a sample set of hotkeys that can be\nassigned to the different operations. These are not bound\nby default - if you want to use them you have to call:\n`spoon.WindowScreenMove:bindHotkeys(spoon.WindowScreenMove.defaultHotkeys)`\nafter loading the spoon. Value:\n```\n {\n    screen_left = { {\"ctrl\", \"alt\", \"cmd\"}, \"Left\" },\n    screen_right= { {\"ctrl\", \"alt\", \"cmd\"}, \"Right\" },\n    screen_up   = { {\"ctrl\", \"alt\", \"cmd\"}, \"Up\" },\n    screen_down = { {\"ctrl\", \"alt\", \"cmd\"}, \"Down\" },\n }\n```",
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "22",
+        "name": "defaultHotkeys",
+        "signature": "WindowScreenMove.defaultHotkeys",
+        "stripped_doc": "assigned to the different operations. These are not bound\nby default - if you want to use them you have to call:\n`spoon.WindowScreenMove:bindHotkeys(spoon.WindowScreenMove.defaultHotkeys)`\nafter loading the spoon. Value:\n```\n {\n    screen_left = { {\"ctrl\", \"alt\", \"cmd\"}, \"Left\" },\n    screen_right= { {\"ctrl\", \"alt\", \"cmd\"}, \"Right\" },\n    screen_up   = { {\"ctrl\", \"alt\", \"cmd\"}, \"Up\" },\n    screen_down = { {\"ctrl\", \"alt\", \"cmd\"}, \"Down\" },\n }\n```",
+        "type": "Variable"
+      },
+      {
+        "def": "WindowScreenMove.logger",
+        "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "doc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "file": "Source/WindowScreenMove.spoon//init.lua",
+        "lineno": "17",
+        "name": "logger",
+        "signature": "WindowScreenMove.logger",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "name": "WindowScreenMove",
+    "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenMove.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenMove.spoon.zip)",
+    "submodules": [],
+    "type": "Module"
+  }
+]

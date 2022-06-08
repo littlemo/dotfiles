@@ -1,8 +1,17 @@
 hs.loadSpoon("SpoonInstall")
+Install = spoon.SpoonInstall
+
+-- 设置自定义源
+Install.repos.littlemo = {
+   url = "https://github.com/littlemo/Spoons",
+   desc = "littlemo spoon repository",
+   branch = "master",
+}
+
 local hyperKey = {'shift', 'alt', 'ctrl', 'cmd'}
 
 -- 快速启动应用
-spoon.SpoonInstall:andUse("AppLauncher", {
+Install:andUse("AppLauncher", {
   config = {
     modifiers = hyperKey,
   },
@@ -22,12 +31,15 @@ spoon.SpoonInstall:andUse("AppLauncher", {
 })
 
 -- 跨屏幕移动窗口
-spoon.SpoonInstall:andUse("WindowScreenLeftAndRight", {
+Install:andUse("WindowScreenMove", {
+  repo = "littlemo",
   config = {
     animationDuration = 0,
   },
   hotkeys = {
     screen_left = { hyperKey, "Left" },
     screen_right= { hyperKey, "Right" },
+    screen_up   = { hyperKey, "Up" },
+    screen_down = { hyperKey, "Down" },
   },
 })

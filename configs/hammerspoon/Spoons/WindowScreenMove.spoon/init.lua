@@ -1,43 +1,47 @@
---- === WindowScreenLeftAndRight ===
+--- === WindowScreenMove ===
 ---
 --- Move windows to other screens
 ---
---- Download: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenLeftAndRight.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenLeftAndRight.spoon.zip)
+--- Download: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenMove.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WindowScreenMove.spoon.zip)
 
 local obj={}
 obj.__index = obj
 
 -- Metadata
-obj.name = "WindowScreenLeftAndRight"
+obj.name = "WindowScreenMove"
 obj.version = "0.1"
-obj.author = "Diego Zamboni <diego@zzamboni.org>"
-obj.homepage = "https://github.com/Hammerspoon/Spoons"
+obj.author = "Moore Huang <moore.hy@qq.com>"
+obj.homepage = "https://github.com/littlemo/Spoons"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
---- WindowScreenLeftAndRight.logger
+--- WindowScreenMove.logger
 --- Variable
 --- Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.
-obj.logger = hs.logger.new('WindowScreenLeftAndRight')
+obj.logger = hs.logger.new('WindowScreenMove')
 
---- WindowScreenLeftAndRight.defaultHotkeys
+--- WindowScreenMove.defaultHotkeys
 --- Variable
 --- Table containing a sample set of hotkeys that can be
 --- assigned to the different operations. These are not bound
 --- by default - if you want to use them you have to call:
---- `spoon.WindowScreenLeftAndRight:bindHotkeys(spoon.WindowScreenLeftAndRight.defaultHotkeys)`
+--- `spoon.WindowScreenMove:bindHotkeys(spoon.WindowScreenMove.defaultHotkeys)`
 --- after loading the spoon. Value:
 --- ```
 ---  {
 ---     screen_left = { {"ctrl", "alt", "cmd"}, "Left" },
 ---     screen_right= { {"ctrl", "alt", "cmd"}, "Right" },
+---     screen_up   = { {"ctrl", "alt", "cmd"}, "Up" },
+---     screen_down = { {"ctrl", "alt", "cmd"}, "Down" },
 ---  }
 --- ```
 obj.defaultHotkeys = {
    screen_left = { {"ctrl", "alt", "cmd"}, "Left" },
    screen_right= { {"ctrl", "alt", "cmd"}, "Right" },
+   screen_up   = { {"ctrl", "alt", "cmd"}, "Up" },
+   screen_down = { {"ctrl", "alt", "cmd"}, "Down" },
 }
 
---- WindowScreenLeftAndRight.animationDuration
+--- WindowScreenMove.animationDuration
 --- Variable
 --- Length of the animation to use for the window movements across the
 --- screens. `nil` means to use the existing value from
@@ -73,6 +77,10 @@ function obj.moveCurrentWindowToScreen(how)
       win:moveOneScreenWest()
    elseif how == "right" then
       win:moveOneScreenEast()
+   elseif how == "up" then
+      win:moveOneScreenNorth()
+   elseif how == "down" then
+      win:moveOneScreenSouth()
    end
    _restoreFC()
 end
@@ -83,18 +91,22 @@ end
 
 obj.oneScreenLeft  = hs.fnutils.partial(obj.moveCurrentWindowToScreen, "left")
 obj.oneScreenRight = hs.fnutils.partial(obj.moveCurrentWindowToScreen, "right")
+obj.oneScreenUp    = hs.fnutils.partial(obj.moveCurrentWindowToScreen, "up")
+obj.oneScreenDown  = hs.fnutils.partial(obj.moveCurrentWindowToScreen, "down")
 
---- WindowScreenLeftAndRight:bindHotkeys(mapping)
+--- WindowScreenMove:bindHotkeys(mapping)
 --- Method
---- Binds hotkeys for WindowScreenLeftAndRight
+--- Binds hotkeys for WindowScreenMove
 ---
 --- Parameters:
 ---  * mapping - A table containing hotkey objifier/key details for the following items:
----   * screen_left, screen_right - move the window to the left/right screen (if you have more than one monitor connected, does nothing otherwise)
+---   * screen_left, screen_right, screen_up, screen_down - move the window to the left/right/up/down screen (if you have more than one monitor connected, does nothing otherwise)
 function obj:bindHotkeys(mapping)
    local hotkeyDefinitions = {
-      screen_left = self.oneScreenLeft,
+      screen_left  = self.oneScreenLeft,
       screen_right = self.oneScreenRight,
+      screen_up    = self.oneScreenUp,
+      screen_down  = self.oneScreenDown,
    }
    hs.spoons.bindHotkeysToSpec(hotkeyDefinitions, mapping)
    return self
